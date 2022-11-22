@@ -1,1 +1,8 @@
-Django==3.2
+Django==3.0
+asgiref==3.4.1
+postgres==4.0
+psycopg2==2.8.6
+psycopg2-binary==2.9.3
+psycopg2-pool==1.1
+sqlparse==0.4.2
+tzdata==2021.5
