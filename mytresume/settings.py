@@ -27,9 +27,9 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '127.0.0.1',
     'localhost',
-    '.vercel.app'
+    '.vercel.app',
+    '.now.sh'
 ]
-
 #ALLOWED_HOSTS = ['.vercel.app', '.now.sh']
 
 # Application definition
@@ -60,7 +60,7 @@ ROOT_URLCONF = 'mytresume.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'templates')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -130,7 +130,7 @@ STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT=os.path.join(BASE_DIR,'media')
+MEDIA_ROOT=os.path.join(BASE_DIR,'staticfiles_build','media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 import dj_database_url
